@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Genetic operations</TITLE>
+<META NAME="description" CONTENT="Genetic operations">
+<META NAME="keywords" CONTENT="arg">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="arg.css">
+
+<LINK REL="next" HREF="node10.html">
+<LINK REL="previous" HREF="node5.html">
+<LINK REL="up" HREF="node3.html">
+<LINK REL="next" HREF="node10.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html111"
+  HREF="node10.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html109"
+  HREF="node3.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html103"
+  HREF="node8.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html112"
+  HREF="node10.html">Game based data initialization</A>
+<B> Up:</B> <A NAME="tex2html110"
+  HREF="node3.html">Architecture</A>
+<B> Previous:</B> <A NAME="tex2html104"
+  HREF="node8.html">Melodies</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00033000000000000000">
+Genetic operations</A>
+</H2>
+
+<P>
+Two kinds of operations on genotypes have been implemented in the system: generic operations, that can be applied to any type of pattern, and content aware operations, which can lead to meaningful mutations on a particular type of pattern.
+
+<P>
+Generic operations include the standard cross-mutation and shifting, both in the two forms of single bit operations and block aware ones: the first form slices or shifts the genotype on any point or by any integer length, while the second form does the same on blocks of bits of length specified into the block size field of the genotype. A generic bit mutator also randomly changes bits in the breeded patterns.
+
+<P>
+Content aware mutations act on blocks of data in a meaningful way: an octave shift operation changes the octave of a particular note of the melody, the mute mutator inserts a pause at a specified time, while the hold mutator substitutes what was possibly a new note, a pause or a chord with the continuation of the previous event.
+
+<P>
+<BR><HR>
+<ADDRESS>
+Alessandro Bruni
+2011-02-18
+</ADDRESS>
+</BODY>
+</HTML>
